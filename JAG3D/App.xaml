@@ -1,0 +1,10 @@
+﻿<Application x:Class="JAG3D.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:JAG3D"
+             StartupUri="applied_geodesy/ui/JAG3D.xaml">
+    
+    <Application.Resources>
+
+    </Application.Resources>
+</Application>

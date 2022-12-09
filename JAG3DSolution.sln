@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JAG3D", "JAG3D\JAG3D.csproj", "{7F3BE82B-BD3D-4463-9FEA-C8C24A1038F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F3BE82B-BD3D-4463-9FEA-C8C24A1038F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F3BE82B-BD3D-4463-9FEA-C8C24A1038F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F3BE82B-BD3D-4463-9FEA-C8C24A1038F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F3BE82B-BD3D-4463-9FEA-C8C24A1038F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D58EB7E-6225-4420-9277-670EE420483E}
+	EndGlobalSection
+EndGlobal

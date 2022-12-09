@@ -1,0 +1,7 @@
+Standpunkt	Zielpunkt	Epoche 0	Epoche 1	Nivellementsweg
+3	1	0.247 m	0.256 m	600 m
+1	2	5.979 m	5.980 m	700 m
+3	2	6.223 m	6.234 m	800 m
+1	4	0.379 m	0.344 m	300 m
+4	5	0.120 m	0.115 m	400 m
+3	5	0.744 m	0.713 m	400 m

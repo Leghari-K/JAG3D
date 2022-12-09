@@ -1,0 +1,73 @@
+﻿<Page x:Class="JAG3D.applied_geodesy.ui.UITreeBuilder"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:JAG3D.applied_geodesy.ui"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UITreeBuilder">
+
+    <Grid>
+        <TreeView>
+            <TreeViewItem Header="JAG3D-Project" IsExpanded="True">
+                <TreeViewItem Margin="0,5,0,0" Header="Reference points" IsExpanded="True">
+                    <CheckBox  Margin="0,5,0,0" Content="Reference points 1D" />
+                    <CheckBox  Margin="0,5,0,0" Content="Reference points 2D" />
+                    <CheckBox  Margin="0,5,0,0" Content="Reference points 3D" />
+                </TreeViewItem>
+
+                <TreeViewItem Margin="0,5,0,0" Header="Stochastic points" IsExpanded="True">
+                    <CheckBox  Margin="0,5,0,0" Content="Stochastic points 1D" />
+                    <CheckBox  Margin="0,5,0,0" Content="Stochastic points 2D" />
+                    <CheckBox  Margin="0,5,0,0" Content="Stochastic points 3D" />
+                </TreeViewItem>
+
+                <TreeViewItem Margin="0,5,0,0" Header="Datum points" IsExpanded="True">
+                    <CheckBox  Margin="0,5,0,0" Content="Datum points 1D" />
+                    <CheckBox  Margin="0,5,0,0" Content="Datum points 2D" />
+                    <CheckBox  Margin="0,5,0,0" Content="Datum points 3D" />
+                </TreeViewItem>
+
+                <TreeViewItem Margin="0,5,0,0" Header="New points" IsExpanded="True">
+                    <CheckBox  Margin="0,5,0,0" Content="New points 1D" />
+                    <CheckBox  Margin="0,5,0,0" Content="New points 2D" />
+                    <CheckBox  Margin="0,5,0,0" Content="New points 3D" />
+                </TreeViewItem>
+
+                <TreeViewItem Margin="0,5,0,0" Header="Vertical deflection" IsExpanded="True">
+                    <CheckBox  Margin="0,5,0,0" Content="Reference deflection" />
+                    <CheckBox  Margin="0,5,0,0" Content="Stochastic deflection" />
+                    <CheckBox  Margin="0,5,0,0" Content="Unknown deflection" />
+                </TreeViewItem>
+
+                <TreeViewItem Margin="0,5,0,0" Header="Point nexus" IsExpanded="True">
+                    <CheckBox  Margin="0,5,0,0" Content="Point nexus 1D" />
+                    <CheckBox  Margin="0,5,0,0" Content="Point nexus 2D" />
+                    <CheckBox  Margin="0,5,0,0" Content="Point nexus 3D" />
+                </TreeViewItem>
+
+                <TreeViewItem Margin="0,5,0,0" Header="Observations" IsExpanded="True">
+                    <CheckBox  Margin="0,5,0,0" Content="Leveling data" />
+                    <CheckBox  Margin="0,5,0,0" Content="Direction sets" />
+                    <CheckBox  Margin="0,5,0,0" Content="Horizontal distances" />
+                    <CheckBox  Margin="0,5,0,0" Content="Slope distances" />
+                    <CheckBox  Margin="0,5,0,0" Content="Zenith angles" />
+                </TreeViewItem>
+
+                <TreeViewItem Margin="0,5,0,0" Header="GNSS baselines" IsExpanded="True">
+                    <CheckBox  Margin="0,5,0,0" Content="GNSS baselines 1D" />
+                    <CheckBox  Margin="0,5,0,0" Content="GNSS baselines 2D" />
+                    <CheckBox  Margin="0,5,0,0" Content="GNSS baselines 3D" />
+                </TreeViewItem>
+
+            </TreeViewItem>
+            
+            
+
+
+
+
+        </TreeView>
+    </Grid>
+</Page>

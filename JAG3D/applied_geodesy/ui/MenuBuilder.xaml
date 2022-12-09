@@ -1,0 +1,142 @@
+﻿<Page x:Class="JAG3D.applied_geodesy.ui.MenuBuilder"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:JAG3D.applied_geodesy.ui"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MenuBuilder">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Project">
+                <MenuItem Header="Create _new project" />
+                <MenuItem Header="_Open existing project" />
+                <MenuItem Header="Migrate exi_sting project" />
+                <MenuItem Header="C_lose current project"/>
+                <MenuItem Header="_Copy current project and open"/>
+                <MenuItem Header="Execute S_QL script"/>
+                <Separator />
+                <MenuItem Header="_Recently used projects">
+                    <MenuItem Header="path_bindings_todo"/>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+
+            <MenuItem Header="_Import">
+                <MenuItem Header="Reference points">
+                    <MenuItem Header="Reference points 1D" />
+                    <MenuItem Header="Reference points 2D" />
+                    <MenuItem Header="Reference points 3D" />
+                </MenuItem>
+                <MenuItem Header="Sticgastuc points">
+                    <MenuItem Header="Sticgastuc points 1D" />
+                    <MenuItem Header="Sticgastuc points 2D" />
+                    <MenuItem Header="Sticgastuc points 3D" />
+                </MenuItem>
+                <MenuItem Header="Datum points">
+                    <MenuItem Header="Datum points 1D" />
+                    <MenuItem Header="Datum points 2D" />
+                    <MenuItem Header="Datum points 3D" />
+                </MenuItem>
+                <MenuItem Header="New points">
+                    <MenuItem Header="New points 1D" />
+                    <MenuItem Header="New points 2D" />
+                    <MenuItem Header="New points 3D" />
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Vertical deflection">
+                    <MenuItem Header="Reference deflection" />
+                    <MenuItem Header="Stochastic deflection" />
+                    <MenuItem Header="Approximated deflection" />
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Terrestrial observations">
+                    <MenuItem Header="Leveling data" />
+                    <Separator />
+                    <MenuItem Header="Direction sets" />
+                    <MenuItem Header="Horizontal distances" />
+                    <Separator />
+                    <MenuItem Header="Slope distances" />
+                    <MenuItem Header="Zenith angles" />
+                </MenuItem>
+                <MenuItem Header="GNSS baselines">
+                    <MenuItem Header="GNSS baselines 1D" />
+                    <MenuItem Header="GNSS baselines 2D" />
+                    <MenuItem Header="GNSS baselines 3D" />
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Congruence Analysis">
+                    <MenuItem Header="Point nexus 1D" />
+                    <MenuItem Header="Point nexus 2D" />
+                    <MenuItem Header="Point nexus 3D" />
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Hexagon/Leica">
+                    <MenuItem Header="GSI 1D" />
+                    <MenuItem Header="GSI 2D" />
+                    <MenuItem Header="GSI 2D+H" />
+                    <MenuItem Header="GSI 3D" />
+                    <Separator />
+                    <MenuItem Header="LandXML 1.2 2D" />
+                    <MenuItem Header="LandXML 1.2 3D" />
+                </MenuItem>
+                <MenuItem Header="Trimble/Zeiss">
+                    <MenuItem Header="M5 (DiNi)" />
+                    <MenuItem Header="GKA" />
+                    <Separator />
+                    <MenuItem Header="JobXML 2D" />
+                    <MenuItem Header="JobXML 2D+H" />
+                    <MenuItem Header="JobXML 3D" />
+                </MenuItem>
+                <MenuItem Header="DL-100 (Topcon)" />
+                <Separator />
+                <MenuItem Header="Beo-File(Neptan)" />
+                <MenuItem Header="Z-File (Caplan)" />
+                <Separator />
+                <MenuItem Header="Column-based data" />
+            </MenuItem>
+
+            <MenuItem Header="Propertie_s">
+                <MenuItem Header="Least squares" />
+                <MenuItem Header="Test statistic" />
+                <MenuItem Header="Rank defect" />
+                <MenuItem Header="Projection &amp; reductions" />
+                <Separator />
+                <MenuItem Header="Formatter preferences" />
+                <MenuItem Header="Import preferences" />
+            </MenuItem>
+
+            <MenuItem Header="P_reprocessing">
+                <MenuItem Header="Aproximation values" />
+                <MenuItem Header="Average observations" />
+            </MenuItem>
+
+            <MenuItem Header="_Analysis">
+                <MenuItem Header="Congr_uent points" />
+                <MenuItem Header="Ro_w highlighting" />
+                <MenuItem Header="Anal_ysis charts" />
+            </MenuItem>
+
+            <MenuItem Header="Repor_t">
+                <MenuItem Header="Report_(Default).ftlh" />
+            </MenuItem>
+
+            <MenuItem Header="_Module">
+                <MenuItem Header="Coordinate converter" />
+                <MenuItem Header="Coordinate transformation" />
+                <MenuItem Header="Curve and surface analysis" />
+            </MenuItem>
+
+            <MenuItem Header="_Help">
+                <MenuItem Header="About _JAG3D" MouseUp="MenuItem_MouseUp"/>
+                <MenuItem Header="Check for _updates..." />
+            </MenuItem>
+
+
+        </Menu>
+
+    </DockPanel>
+</Page>

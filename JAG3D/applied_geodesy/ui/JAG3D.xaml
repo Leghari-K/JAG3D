@@ -1,0 +1,42 @@
+﻿<Window x:Class="JAG3D.applied_geodesy.ui.JAG3D"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JAG3D.applied_geodesy.ui"
+        mc:Ignorable="d"
+        Title="JAG3D . Least-Squares Adjustment Deformation Analysis ." Width="900" Height="650"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+
+
+        <Frame x:Name="menuBuilder" Source="MenuBuilder.xaml" Grid.Row="0" BorderBrush="LightGray" BorderThickness="1"/>
+
+        <Frame x:Name="contentArea" Source="SplitPane.xaml" Grid.Row="1" >
+
+        </Frame>
+
+        <Frame x:Name="footerArea" Margin="0,1,0,0" Source="FooterPane.xaml" Grid.Row="2" BorderBrush="Gray" BorderThickness=".5">
+            
+        </Frame>
+        
+    </Grid>
+
+</Window>

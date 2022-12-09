@@ -1,0 +1,17 @@
+﻿<Page x:Class="JAG3D.applied_geodesy.ui.FooterArea"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:JAG3D.applied_geodesy.ui"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FooterArea">
+
+    <Grid>
+        <DockPanel Background="#F4F4F4F4">
+            <TextBlock DockPanel.Dock="Left" Margin="15,0,0,0" FontSize="20" Foreground="Gray">.NET.Applied.Geodesy.3D</TextBlock>
+            <Button DockPanel.Dock="Right" Width="100" HorizontalAlignment="Right" Margin="5,5,10,5">Adjust Network</Button>
+        </DockPanel>
+    </Grid>
+</Page>
