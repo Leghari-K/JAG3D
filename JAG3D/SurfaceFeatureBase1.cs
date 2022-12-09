@@ -9,6 +9,6 @@
             this.immutable = immutable;
         }
 
-       
+
     }
 }

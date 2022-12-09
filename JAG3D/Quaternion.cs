@@ -90,7 +90,7 @@ namespace org.applied_geodesy.adjustment.geometry
 			return qR;
 		}
 
-		
+
 		public virtual Quaternion rotate(double[] p)
 		{
 			return this.rotate(new Quaternion(p));
@@ -99,7 +99,7 @@ namespace org.applied_geodesy.adjustment.geometry
 		public virtual Quaternion inv()
 		{
 			Quaternion cQ = this.conj();
-			double abs2 = Math.Pow(this.abs(),2);
+			double abs2 = Math.Pow(this.abs(), 2);
 			return new Quaternion(cQ.getArg(0) / abs2, cQ.getArg(1) / abs2, cQ.getArg(2) / abs2, cQ.getArg(3) / abs2);
 		}
 
@@ -166,18 +166,18 @@ namespace org.applied_geodesy.adjustment.geometry
 
 		public static double[][] toRotationMatrix(Quaternion q)
 		{
-			double[][] R = {new double[3], new double[3], new double[3]};
+			double[][] R = { new double[3], new double[3], new double[3] };
 			double q0 = q.Q0;
 			double q1 = q.Q1;
 			double q2 = q.Q2;
 			double q3 = q.Q3;
 
 
-			R[0] = new double[] {2.0 * q0 * q0 - 1.0 + 2.0 * q1 * q1, 2.0 * (q1 * q2 - q0 * q3), 2.0 * (q1 * q3 + q0 * q2)};
+			R[0] = new double[] { 2.0 * q0 * q0 - 1.0 + 2.0 * q1 * q1, 2.0 * (q1 * q2 - q0 * q3), 2.0 * (q1 * q3 + q0 * q2) };
 
-			R[1] = new double[] {2.0 * (q1 * q2 + q0 * q3), 2.0 * q0 * q0 - 1.0 + 2.0 * q2 * q2, 2.0 * (q2 * q3 - q0 * q1)};
+			R[1] = new double[] { 2.0 * (q1 * q2 + q0 * q3), 2.0 * q0 * q0 - 1.0 + 2.0 * q2 * q2, 2.0 * (q2 * q3 - q0 * q1) };
 
-			R[2] = new double[] {2.0 * (q1 * q3 - q0 * q2), 2.0 * (q2 * q3 + q0 * q1), 2.0 * q0 * q0 - 1.0 + 2.0 * q3 * q3};
+			R[2] = new double[] { 2.0 * (q1 * q3 - q0 * q2), 2.0 * (q2 * q3 + q0 * q1), 2.0 * q0 * q0 - 1.0 + 2.0 * q3 * q3 };
 
 			return R;
 		}
@@ -241,25 +241,25 @@ namespace org.applied_geodesy.adjustment.geometry
 				double q1 = this.Q1;
 				double q2 = this.Q2;
 				double q3 = this.Q3;
-    
+
 				double r13 = 2.0 * (q1 * q3 + q0 * q2);
 				double r23 = 2.0 * (q2 * q3 - q0 * q1);
 				double r33 = 2.0 * q0 * q0 - 1.0 + 2.0 * q3 * q3;
-    
+
 				double r12 = 2.0 * (q1 * q2 - q0 * q3);
 				double r11 = 2.0 * q0 * q0 - 1.0 + 2.0 * q1 * q1;
-    
+
 				double rx = Math.Atan2(r23, r33);
 				double ry = Math.Atan2(-r13, hypo(r23, r33));
 				double rz = Math.Atan2(r12, r11);
-    
-				return new double[]{rx, ry, rz};
+
+				return new double[] { rx, ry, rz };
 			}
 		}
 
-        double hypo(double x, double y)
-        {
-            return Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
-        }
-    }
+		double hypo(double x, double y)
+		{
+			return Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
+		}
+	}
 }
