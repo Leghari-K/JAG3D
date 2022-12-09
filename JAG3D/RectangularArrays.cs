@@ -1,4 +1,11 @@
-﻿internal static class RectangularArrays
+﻿//----------------------------------------------------------------------------------------
+//	Copyright © 2007 - 2022 Tangible Software Solutions, Inc.
+//	This class can be used by anyone provided that the copyright notice remains intact.
+//
+//	This class includes methods to convert Java rectangular arrays (jagged arrays
+//	with inner arrays of the same length).
+//----------------------------------------------------------------------------------------
+internal static class RectangularArrays
 {
     public static double[][] RectangularDoubleArray(int size1, int size2)
     {
